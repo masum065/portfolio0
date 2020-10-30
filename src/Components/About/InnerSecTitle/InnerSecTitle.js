@@ -19,11 +19,11 @@ const InnerSecTitle = ({ subTitle, title }) => {
 };
 
 const InnerTitle = styled.div`
-	.jsNuYh {
-		text-align: left;
+	div {
+		text-align: left !important;
 		position: relative;
 		::before {
-			display: none;
+			display: none !important;
 		}
 	}
 `;

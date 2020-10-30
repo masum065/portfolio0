@@ -82,7 +82,9 @@ const PersonalInfo = () => {
 								<ResumeBtn href={Resume} download>
 									Download CV
 								</ResumeBtn>
-								<SocialLink />
+								<div className='socl'>
+									<SocialLink />
+								</div>
 							</Col>
 						</Row>
 					</div>
@@ -111,25 +113,27 @@ const InfoBox = styled.div`
 		}
 	}
 
-	.bDCIAX {
-		position: relative;
-		right: -20px;
-		bottom: -15px;
-		flex-direction: row;
-		margin-left: 100px;
+	.socl {
+		ul {
+			position: relative;
+			right: -20px;
+			bottom: -15px;
+			flex-direction: row;
+			margin-left: 100px;
 
-		::before {
-			content: '';
-			height: 2px;
-			width: 75px;
-			position: absolute;
-			background: #717070;
-			left: -94px;
-		}
+			::before {
+				content: '';
+				height: 2px;
+				width: 75px;
+				position: absolute;
+				background: #717070;
+				left: -94px;
+			}
 
-		a {
-			font-size: 20px;
-			padding: 6px 8px;
+			a {
+				font-size: 20px;
+				padding: 6px 8px;
+			}
 		}
 	}
 `;

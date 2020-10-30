@@ -1,17 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const ExperinceCard = () => {
+const ExperinceCard = ({
+	expernce: { courseTitle, orgName, time, summary },
+}) => {
 	return (
 		<Expreince>
-			<h5>Computer Science</h5>
+			<h5>{courseTitle}</h5>
 			<p>
-				<span>Cambridge University</span> / <span>2004 - 2007</span>
+				<span>{orgName}</span> / <span>{time}</span>
 			</p>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
-				quo repudiandae.
-			</p>
+			{/* <p>{summary}</p> */}
 		</Expreince>
 	);
 };
