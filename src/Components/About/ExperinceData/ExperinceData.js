@@ -18,6 +18,12 @@ const experinceData = [
 		category: 'course',
 	},
 	{
+		courseTitle: `Javascript: All You Need To Know`,
+		orgName: 'Stack Learner',
+		time: '2020',
+		category: 'course',
+	},
+	{
 		courseTitle: 'PSD TO HTML',
 		orgName: 'RR Foundation',
 		time: '2019',

@@ -55,8 +55,8 @@ const ContactInfo = () => {
 				part of your visions.
 			</p>
 
-			{infoData.map((info) => (
-				<Info info={info} />
+			{infoData.map((info, index) => (
+				<Info key={index} info={info} />
 			))}
 		</Div>
 	);
@@ -65,7 +65,7 @@ const ContactInfo = () => {
 const InfoBox = styled.div`
 	position: relative;
 	padding-left: 76px;
-	padding-bottom: 20px;
+	padding-bottom: 25px;
 
 	:last-child {
 		padding-bottom: 0;

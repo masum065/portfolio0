@@ -32,7 +32,7 @@ const infoData = [
 		highlight: 'true',
 	},
 	{
-		label: 'Langages',
+		label: 'Languages',
 		info: 'Bangla, English',
 	},
 ];
@@ -73,14 +73,14 @@ const PersonalInfo = () => {
 
 					<div className='info-details'>
 						<Row>
-							{infoData.map((info) => (
-								<InfoCard info={info} />
+							{infoData.map((info, index) => (
+								<InfoCard key={index} info={info} />
 							))}
 						</Row>
 						<Row className='mt-3'>
-							<Col className='d-flex' lg={12}>
+							<Col className='d-lg-flex' lg={12}>
 								<ResumeBtn href={Resume} download>
-									Download CV
+									Download Resume
 								</ResumeBtn>
 								<div className='socl'>
 									<SocialLink />
@@ -136,6 +136,12 @@ const InfoBox = styled.div`
 			}
 		}
 	}
+
+	@media (min-width: 320px) and (max-width: 575px) {
+		.entry {
+			margin-top: 80px;
+		}
+	}
 `;
 const Info = styled.div`
 	span {
@@ -149,9 +155,15 @@ const Info = styled.div`
 		font-size: 16px;
 		color: ${(props) => props.color === 'true' && '#00f39d'};
 	}
+
+	@media (min-width: 320px) and (max-width: 575px) {
+		p {
+			margin-bottom: 10px;
+		}
+	}
 `;
 
-const ResumeBtn = styled.a`
+export const ResumeBtn = styled.a`
 	border: 2px solid #009e66;
 	background: none;
 	color: #fff;
@@ -188,6 +200,23 @@ const AboutPhoto = styled.div`
 		margin-left: 110px;
 		position: relative;
 		z-index: 22;
+	}
+
+	@media (min-width: 320px) and (max-width: 575px) {
+		img {
+			max-height: 420px;
+			margin-left: 90px;
+		}
+
+		.borderr {
+			::before {
+				width: 45%;
+				right: 85px;
+			}
+		}
+		.entry {
+			margin-top: 80px;
+		}
 	}
 `;
 

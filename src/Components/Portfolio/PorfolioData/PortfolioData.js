@@ -1,8 +1,12 @@
-import creativeAgency from '../../../Images/portfolio/crative-agency.png';
+import creativeAgency from '../../../Images/portfolio/crative-agency.jpg';
 import volunteerNetwork from '../../../Images/portfolio/Volunteer-Network.jpg';
 import doctosPortal from '../../../Images/portfolio/Doctors-portal.jpg';
 import travelGuru from '../../../Images/portfolio/travel-guru.jpg';
 import myMotors from '../../../Images/portfolio/myMotors.jpg';
+import apartmentHouse from '../../../Images/portfolio/apartment-houses.jpg';
+import athena from '../../../Images/portfolio/Athena.jpg';
+import accesories from '../../../Images/portfolio/rj-accesories.jpg';
+import reen from '../../../Images/portfolio/reen.jpg';
 
 const portfolioData = [
 	{
@@ -22,7 +26,28 @@ const portfolioData = [
 			git: 'https://github.com/masum065/creative-agency-client',
 			site: 'https://crative-agency-0.web.app/',
 		},
-		category: 'full stack',
+		category: 'fullstack',
+	},
+	{
+		image: apartmentHouse,
+		title: 'Apartment House',
+		description: `Full stack house rental web apps. where any user can register, login by google and facebook, can booking  their desired apartment, get detail of the apartment. Easy description of all apartments. Admin dashboard, monitoring whole system, can insert new house.They may also contact
+		
+		`,
+		technology: [
+			'React',
+			'Bootstrap',
+			'Node',
+			'Express',
+			'Mongodb',
+			'Firebase',
+			'SCSS',
+		],
+		link: {
+			git: 'https://github.com/masum065/apartment-hunt-client',
+			site: 'https://apartment-hunt-0.web.app/',
+		},
+		category: 'fullstack',
 	},
 	{
 		image: volunteerNetwork,
@@ -42,7 +67,7 @@ const portfolioData = [
 			git: 'https://github.com/masum065/-volunteer-network-client-0',
 			site: 'https://volunteer-network-0.web.app/',
 		},
-		category: 'full stack',
+		category: 'fullstack',
 	},
 	{
 		image: doctosPortal,
@@ -63,7 +88,7 @@ const portfolioData = [
 			git: 'https://github.com/masum065/doctors-portal-client',
 			site: 'https://doctors-portal-0-a1145.web.app/',
 		},
-		category: 'full stack',
+		category: 'fullstack',
 	},
 	{
 		image: travelGuru,
@@ -84,12 +109,33 @@ const portfolioData = [
 			git: 'https://github.com/masum065/travel-guru',
 			site: 'https://travel-guruu.netlify.app/',
 		},
-		category: 'full stack',
+		category: 'frontend',
+	},
+	{
+		image: athena,
+		title: 'Athena',
+		description: `This is a fully responsive landing page.A navbar has been added at the very top of the page which is
+		responsive, When it will be used in a smaller device the navbar appears as a hamburger menu.The banner of this page has an eye-catching outlook with an illustration photo, attractive background decoration, and a fancy button.
+		
+        `,
+		technology: [
+			'React',
+			'Bootstrap',
+			'React Bootstrap',
+			'Netlify',
+			'SCSS',
+			'CSS',
+		],
+		link: {
+			git: 'https://github.com/masum065/athena-client',
+			site: 'https://athena0.netlify.app/',
+		},
+		category: 'frontend',
 	},
 	{
 		image: myMotors,
 		title: 'MyMotors',
-		description: `It's responsive ecomarce HTML site. Bootstrap Fontsom and some JQuery plugins have been used to create it.`,
+		description: `It's responsive ecomarce HTML site. Bootstrap Fontawesom and some JQuery plugins have been used to create it.`,
 		technology: [
 			'HTML',
 			'CSS3',
@@ -105,7 +151,47 @@ const portfolioData = [
 			git: 'https://github.com/masum065/mymotors',
 			site: 'https://mymotors.netlify.app/',
 		},
-		category: 'full stack',
+		category: 'html',
+	},
+	{
+		image: reen,
+		title: 'Reen',
+		description: `It's responsive showcase HTML site. Its especially a huge mega menu with some Pure CSS. 
+		Make HTML markup so beautiful that even if new data is injected, it won't break the layout.`,
+		technology: [
+			'HTML',
+			'CSS3',
+			'Bootstrap',
+			'Fontawesome',
+			'Slider',
+			'LightBox',
+			'Owl Carousel',
+		],
+		link: {
+			git: 'https://github.com/masum065/reen',
+			site: 'https://masum065.github.io/reen/',
+		},
+		category: 'html',
+	},
+	{
+		image: accesories,
+		title: 'Accessories',
+		description: `It's full responsive cute tiny HTML site. Bootstrap Fontawesom and some JQuery plugins have been used to create it.`,
+		technology: [
+			'HTML',
+			'CSS3',
+			'Bootstrap',
+			'Ionicons',
+			'WOW js',
+			'Animate Js',
+			'LightBox',
+			'Owl Carousel',
+		],
+		link: {
+			git: 'https://github.com/masum065/rj-accessories',
+			site: 'https://masum065.github.io/rj-accessories/',
+		},
+		category: 'html',
 	},
 ];
 

@@ -1,13 +1,20 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 import MyPhoto from '../../../Images/myself.jpg';
+import { ResumeBtn } from '../../About/PersonalInfo/PersonalInfo';
 import MainButton from '../../Shared/MainButton/MainButton';
 import SocialLink from '../../Shared/SoialLink/SocialLink';
+import Resume from '../../../Images/resume-of-Masum_BIllah.pdf';
 
 import Menu from '../Menu/Menu';
 
 const Hero = () => {
+	const history = useHistory();
+	const clicked = () => {
+		console.log('click3ed');
+	};
 	return (
 		<HeroContianer>
 			<Container fluid className='home-content p-0'>
@@ -18,7 +25,7 @@ const Hero = () => {
 					<Col lg={5} id='myPhoto'></Col>
 					<Col lg={7}>
 						<Description>
-							<h3>MERN-Stack Developer</h3>
+							<h3 onClick={clicked}>MERN-Stack Developer</h3>
 							<h2>MASUM BILLAH</h2>
 							<p>
 								Hi, My name is Masum Billah. I am a MERN stack
@@ -29,7 +36,16 @@ const Hero = () => {
 								software that improves the lives of those around
 								me.
 							</p>
-							<MainButton>Hello</MainButton>
+							<div className='btnnn'>
+								<MainButton
+									onClick={() => history.push(`/about`)}
+								>
+									More About
+								</MainButton>
+								<ResumeBtn href={Resume} download>
+									Get Resume
+								</ResumeBtn>
+							</div>
 						</Description>
 					</Col>
 				</Row>
@@ -97,6 +113,22 @@ const Description = styled.div`
 		padding-right: 60px;
 		padding-top: 20px;
 		padding-bottom: 15px;
+	}
+
+	@media (min-width: 320px) and (max-width: 575px) {
+		margin-top: 35px;
+		margin-bottom: 50px;
+
+		h3 {
+			font-size: 17px;
+		}
+		h2 {
+			font-size: 47px;
+		}
+		p {
+			padding-right: 0;
+			font-size: 17px;
+		}
 	}
 `;
 

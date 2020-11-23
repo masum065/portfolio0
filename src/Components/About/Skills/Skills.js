@@ -26,7 +26,6 @@ const Familiar = [
 	{ name: 'Wordpress' },
 	{ name: 'C Language' },
 	{ name: 'OOP' },
-	{ name: 'Wordpress' },
 	{ name: 'Responsive UI Design' },
 ];
 const Tools = [
@@ -47,25 +46,24 @@ const Skills = () => {
 			<Row className='py-3 my-3'>
 				<Col lg={4}>
 					<ExpTitle>Comfortable</ExpTitle>
-					{Comfortable.map((skill) => (
-						<SkillShape skill={skill} />
-					))}
+					{mapFunc(Comfortable)}
 				</Col>
 				<Col lg={4}>
 					<ExpTitle>Familiar</ExpTitle>
-					{Familiar.map((skill) => (
-						<SkillShape skill={skill} />
-					))}
+
+					{mapFunc(Familiar)}
 				</Col>
 				<Col lg={4}>
 					<ExpTitle>Tools</ExpTitle>
-					{Tools.map((skill) => (
-						<SkillShape skill={skill} />
-					))}
+					{mapFunc(Tools)}
 				</Col>
 			</Row>
 		</>
 	);
+};
+
+const mapFunc = (arr) => {
+	return arr.map((skill, index) => <SkillShape key={index} skill={skill} />);
 };
 
 export default Skills;

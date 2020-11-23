@@ -46,8 +46,8 @@ const links = [
 const SocialLink = () => {
 	return (
 		<Ul>
-			{links.map((link) => (
-				<Link link={link}></Link>
+			{links.map((link, index) => (
+				<Link key={index} link={link}></Link>
 			))}
 		</Ul>
 	);

@@ -24,15 +24,15 @@ const Experince = () => {
 			<Row className='my-4 mb-2'>
 				<Col lg={6}>
 					<ExpTitle>Course Work</ExpTitle>
-					{courses.map((course) => (
-						<ExperinceCard expernce={course} />
+					{courses.map((course, index) => (
+						<ExperinceCard key={index} expernce={course} />
 					))}
 				</Col>
 				<Col lg={6}>
 					<ExpTitle>Education</ExpTitle>
 
-					{accademics.map((accademic) => (
-						<ExperinceCard expernce={accademic} />
+					{accademics.map((accademic, index) => (
+						<ExperinceCard key={index} expernce={accademic} />
 					))}
 				</Col>
 			</Row>

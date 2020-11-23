@@ -48,7 +48,7 @@ const FormContainer = styled.div`
 		border: none;
 		border-bottom: 1px solid #1d1d1d;
 		background: #161616;
-		padding: 8px 15px;
+		padding: 12px 15px;
 		margin-bottom: 20px;
 		font-size: 16px;
 		font-weight: 300;

@@ -21,8 +21,8 @@ const About = () => {
 			<Skills />
 
 			<InnerSecTitle
-				subTitle='My level of knowledge in some tools'
-				title='My Skills'
+				subTitle='Check out my Accademic Info'
+				title='Accademic Info'
 			/>
 			<Experince />
 		</Container>
